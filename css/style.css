@@ -1,0 +1,135 @@
+/* START GLOBAL */
+
+body {
+  font-family: "Comfortaa", sans-serif;
+  background-color: #272b30;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nerko One", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #32383e;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #272b30;
+  border-radius: 50px;
+  box-shadow: 0 0 5px rgb(0 0 0 / 0.6) inset;
+}
+
+.badge-bg {
+  background-color: #32383e;
+  padding: 6px;
+}
+
+.bold-size {
+  font-weight: bold;
+}
+
+/* END GLOBAL */
+
+/* START HOME */
+header img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 24vh;
+}
+
+#my-nav {
+  background-color: #3a497b;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+}
+
+.page-logo {
+  max-width: 40px;
+}
+
+#my-nav .nav-link {
+  font-size: 0.75rem;
+  transition: all 0.5s;
+}
+
+#my-nav .navbar-nav .nav-link {
+  color: white;
+}
+
+#my-nav .navbar-nav .nav-link.active,
+#my-nav .navbar-nav .nav-link:hover {
+  color: #09c;
+}
+
+#cards .card {
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.5s;
+  min-height: 100%;
+}
+
+#cards .card:hover {
+  background-color: transparent;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+#cards .inner {
+  flex: auto;
+}
+
+#cards figcaption h3 {
+  color: white;
+  font-size: 1rem;
+}
+/* END HOME */
+
+/* START LOADING */
+.loading {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background-color: #272b30e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid #0000;
+  border-right-color: #ffa50097;
+  position: relative;
+  animation: rotation 1s infinite linear;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  border: inherit;
+  animation: inherit;
+  animation-duration: 2s;
+}
+.loader:after {
+  animation-duration: 4s;
+}
+@keyframes rotation {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+/* END LOADING */

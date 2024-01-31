@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- START HOME -->
+    <section class="games">
+      <header>
+        <img src="imgs/bg.png" alt="bg-img" />
+      </header>
+      <nav
+        id="my-nav"
+        class="navbar navbar-expand-lg w-75 m-auto position-sticky top-0 z-3"
+      >
+        <div class="container">
+          <h5 class="navbar-brand text-white mb-0" href="#">
+            <img class="page-logo me-2" src="imgs/logo.png" alt="page logo" />
+
+            GAME REVIEWS
+          </h5>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  data-category="mmorpg"
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  >MMORPG</a
+                >
+              </li>
+              <li class="nav-item">
+                <a data-category="shooter" class="nav-link" href="#">SHOOTER</a>
+              </li>
+              <li class="nav-item">
+                <a data-category="sailing" class="nav-link" href="#">SAILING</a>
+              </li>
+              <li class="nav-item">
+                <a data-category="permadeath" class="nav-link" href="#"
+                  >PERMADEATH</a
+                >
+              </li>
+              <li class="nav-item">
+                <a data-category="superhero" class="nav-link" href="#"
+                  >SUPERHERO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a data-category="pixel" class="nav-link" href="#">PIXEL</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section id="cards" class="py-5">
+        <div class="container">
+          <div id="gamesData" class="row gy-4"></div>
+        </div>
+      </section>
+    </section>
+    <!-- END HOME -->
+
+    <!-- START DETAILS -->
+
+    <section class="details pt-3 d-none">
+      <div class="container">
+        <header class="hstack justify-content-between mb-3">
+          <h1 class="text-white">Details Game</h1>
+          <button class="btn-close btn-close-white"></button>
+        </header>
+        <div id="gamesDetails" class="row"></div>
+      </div>
+    </section>
+    <!-- END DETAILS -->
+
+    <!-- START LOADING BAR -->
+    <div class="loading d-none">
+      <span class="loader"></span>
+    </div>
+    <!-- END LOADING BAR -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
